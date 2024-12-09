@@ -15,6 +15,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    max-width: 50%;
     width: fit-content;
     height: fit-content;
     margin: auto;
@@ -23,8 +24,6 @@
 }
 
 .login-window {
-    width: fit-content;
-    height: fit-content;
     margin: 30px;
 }
 
@@ -32,18 +31,45 @@
     display: inline-block;
 }
 
-input {
-    font-size: 15px;
-    align-items: center;
-    margin-top: 10px;
-    height: 50px;
+.create-account-form {
+    display: inline-block;
+}
+
+.login-form > input {
     width: 100%;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 10px;
     padding-left: 5px;
     border-radius: 5px;
     border-width: thin;
 }
 
-#login-button, #create-account-button {
+.create-account-form > input {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border-width: thin;
+}
+
+#login-button, #login-create-account-button {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(182, 11, 250);
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-width: 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+#create-account-button {
     font-size: 15px;
     font-weight: bold;
     color: white;

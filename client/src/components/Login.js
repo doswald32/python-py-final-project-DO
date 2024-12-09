@@ -14,7 +14,7 @@ function Login({onChangeUsername, onChangePassword}) {
                         <button id="login-button">Log In</button>
                         <hr></hr>
                         <p>New to Jaunt? Click below to create an account!</p>
-                        <button id="create-account-button">Create Account</button>
+                        <button id="login-create-account-button">Create Account</button>
                     </form>
                 </div>
             </div>
