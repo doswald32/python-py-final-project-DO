@@ -1,10 +1,32 @@
-.login-all {
+.login-container {
     
 }
 
-.login-window {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+.login-window-border {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
     border-style: solid;
+    margin: auto;
+}
+
+.login-window {
+    width: fit-content;
+    height: fit-content;
+    margin: 30px;
+}
+
+.login-form {
+    display: inline-block;
+}
+
+input {
+    align-items: center;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
 }
