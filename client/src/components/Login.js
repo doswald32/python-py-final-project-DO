@@ -13,7 +13,7 @@ function Login({username, password, onChangeUsername, onChangePassword}) {
                         <p>Forgot password?</p>
                         <button id="login-button">Log In</button>
                         <hr></hr>
-                        <p>New to Jaunt? Click below to create an account!</p>
+                        <span className="login-text">New to Jaunt? Click below to create an account!</span>
                         <button id="login-create-account-button">Create Account</button>
                     </form>
                 </div>

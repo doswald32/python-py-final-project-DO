@@ -6,7 +6,7 @@ import CreateAccount from "./CreateAccount";
 
 function App() {
 
-  const [isActiveAccount, setIsActiveAccount] = useState(true);
+  const [isActiveAccount, setIsActiveAccount] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [newUserData, setNewUserData] = useState({

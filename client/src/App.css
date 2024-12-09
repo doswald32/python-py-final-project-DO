@@ -58,3 +58,8 @@
     border-radius: 20px;
     box-shadow: 5px 5px 5px lightgray;
 }
+
+.login-text {
+    display: block;
+    text-align: center;
+}

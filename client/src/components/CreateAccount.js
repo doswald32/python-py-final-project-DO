@@ -15,6 +15,8 @@ function CreateAccount({newUserData, onChangeFirst, onChangeLast, onChangeNewUse
                         <input className="create-account-email" type="text" placeholder="Email" value={newUserData.email} onChange={onChangeEmail}/>
                         <input className="create-account-phone" type="text" placeholder="Phone Number" value={newUserData.phone} onChange={onChangePhone}/>
                         <button id="create-account-button">Create Account</button>
+                        <hr></hr>
+                        <span className="login-text">Already have an account? <a>Sign In!</a></span>
                     </form>
                 </div>
             </div>
