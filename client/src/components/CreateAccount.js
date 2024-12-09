@@ -3,7 +3,9 @@ import logo from "../Assets/jaunt_logo.png"
 function CreateAccount({newUserData, onChangeFirst, onChangeLast, onChangeNewUsername, onChangeNewPassword, onChangeEmail, onChangePhone}) {
     return (
         <main className="login-container">
-            <img id="logo" src={logo} alt="jaunt logo"/>
+            <div>
+                <img id="logo" src={logo} alt="jaunt logo"/>
+            </div>
             <div className="login-window-border">
                 <div className="login-window">
                     <h1>Create an Account</h1>
@@ -13,7 +15,7 @@ function CreateAccount({newUserData, onChangeFirst, onChangeLast, onChangeNewUse
                         <input className="create-account-username" type="text" placeholder="Username" value={newUserData.newUsername} onChange={onChangeNewUsername}/>
                         <input className="create-account-password" type="password" placeholder="Password" value={newUserData.newPassword} onChange={onChangeNewPassword}/>
                         <input className="create-account-email" type="text" placeholder="Email" value={newUserData.email} onChange={onChangeEmail}/>
-                        <input className="create-account-phone" type="text" placeholder="Phone Number" value={newUserData.phone} onChange={onChangePhone}/>
+                        <input className="create-account-phone" type="tel" placeholder="Phone Number" value={newUserData.phone} onChange={onChangePhone}/>
                         <button id="create-account-button">Create Account</button>
                         <hr></hr>
                         <span className="login-text">Already have an account? <a>Sign In!</a></span>
