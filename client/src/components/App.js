@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
+import Login from "./Login";
 
 function App() {
-  return <h1>Project Client</h1>;
+  return (
+    <div className="App">
+      <Login />
+    </div>
+  );
 }
 
 export default App;
-//testing
