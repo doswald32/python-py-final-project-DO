@@ -1,6 +1,6 @@
 import logo from "../Assets/jaunt_logo.png"
 
-function Login({onChangeUsername, onChangePassword}) {
+function Login({username, password, onChangeUsername, onChangePassword}) {
     return (
         <main className="login-container">
             <img id="logo" src={logo} alt="jaunt logo"/>
@@ -8,8 +8,8 @@ function Login({onChangeUsername, onChangePassword}) {
                 <div className="login-window">
                     <h1>Sign in</h1>
                     <form className="login-form">
-                        <input className="login-username" type="text" placeholder="Username or Email" onChange={onChangeUsername}/>
-                        <input className="login-password" type="text" placeholder="Password" onChange={onChangePassword}/>
+                        <input className="login-username" type="text" placeholder="Username or Email" value={username} onChange={onChangeUsername}/>
+                        <input className="login-password" type="text" placeholder="Password" value={password} onChange={onChangePassword}/>
                         <p>Forgot password?</p>
                         <button id="login-button">Log In</button>
                         <hr></hr>
