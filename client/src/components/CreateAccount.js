@@ -11,7 +11,7 @@ function CreateAccount({newUserData, onChangeFirst, onChangeLast, onChangeNewUse
                         <input className="create-account-first" type="text" placeholder="First Name" value={newUserData.firstName} onChange={onChangeFirst}/>
                         <input className="create-account-last" type="text" placeholder="Last Name" value={newUserData.lastName} onChange={onChangeLast}/>
                         <input className="create-account-username" type="text" placeholder="Username" value={newUserData.newUsername} onChange={onChangeNewUsername}/>
-                        <input className="create-account-password" type="text" placeholder="Password" value={newUserData.newPassword} onChange={onChangeNewPassword}/>
+                        <input className="create-account-password" type="password" placeholder="Password" value={newUserData.newPassword} onChange={onChangeNewPassword}/>
                         <input className="create-account-email" type="text" placeholder="Email" value={newUserData.email} onChange={onChangeEmail}/>
                         <input className="create-account-phone" type="text" placeholder="Phone Number" value={newUserData.phone} onChange={onChangePhone}/>
                         <button id="create-account-button">Create Account</button>

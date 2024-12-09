@@ -9,7 +9,7 @@ function Login({username, password, onChangeUsername, onChangePassword}) {
                     <h1>Sign in</h1>
                     <form className="login-form">
                         <input className="login-username" type="text" placeholder="Username or Email" value={username} onChange={onChangeUsername}/>
-                        <input className="login-password" type="text" placeholder="Password" value={password} onChange={onChangePassword}/>
+                        <input className="login-password" type="password" placeholder="Password" value={password} onChange={onChangePassword}/>
                         <p>Forgot password?</p>
                         <button id="login-button">Log In</button>
                         <hr></hr>
