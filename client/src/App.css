@@ -1,0 +1,10 @@
+.login-all {
+    
+}
+
+.login-window {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+}
