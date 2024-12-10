@@ -40,6 +40,7 @@
     padding-left: 5px;
     border-radius: 5px;
     border-width: thin;
+    outline: none;
 }
 
 #login-button, #login-create-account-button, #create-account-button {
