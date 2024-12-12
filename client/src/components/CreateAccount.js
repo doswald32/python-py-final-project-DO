@@ -1,6 +1,42 @@
-import logo from "../Assets/jaunt_logo.png"
+import React, { useState } from "react";
+import logo from "../Assets/jaunt_logo.png";
+import { Link } from "react-router-dom"
 
-function CreateAccount({newUserData, onChangeFirst, onChangeLast, onChangeNewUsername, onChangeNewPassword, onChangeEmail, onChangePhone}) {
+function CreateAccount() {
+    
+    const [newUserData, setNewUserData] = useState({
+        firstName: "",
+        lastName: "",
+        newUserName: "",
+        newPassword: "",
+        email: "",
+        phone: "",
+      });
+
+      function onChangeFirst(e) {
+        setNewUserData({ ...newUserData, firstName: e.target.value })
+      }
+    
+      function onChangeLast(e) {
+        setNewUserData({ ...newUserData, lastName: e.target.value })
+      }
+    
+      function onChangeNewUsername(e) {
+        setNewUserData({ ...newUserData, newUserName: e.target.value })
+      }
+    
+      function onChangeNewPassword(e) {
+        setNewUserData({ ...newUserData, newPassword: e.target.value })
+      }
+    
+      function onChangeEmail(e) {
+        setNewUserData({ ...newUserData, email: e.target.value })
+      }
+    
+      function onChangePhone(e) {
+        setNewUserData({ ...newUserData, phone: e.target.value })
+      }
+
     return (
         <main className="login-container">
             <div>
@@ -18,7 +54,7 @@ function CreateAccount({newUserData, onChangeFirst, onChangeLast, onChangeNewUse
                         <input className="create-account-phone" type="tel" placeholder="Phone Number" value={newUserData.phone} onChange={onChangePhone}/>
                         <button id="create-account-button">Create Account</button>
                         <hr></hr>
-                        <span className="login-text">Already have an account? Sign In!</span>
+                        <Link to="/login"><span className="login-text">Already have an account? Sign In!</span></Link>
                     </form>
                 </div>
             </div>

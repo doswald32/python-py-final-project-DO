@@ -1,6 +1,20 @@
-import logo from "../Assets/jaunt_logo.png"
+import React, { useState } from "react";
+import logo from "../Assets/jaunt_logo.png";
 
-function Login({username, password, onChangeUsername, onChangePassword}) {
+
+function Login() {
+    
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+    function onChangeUsername(e) {
+        setUsername(e.target.value)
+      }
+    
+    function onChangePassword(e) {
+        setPassword(e.target.value)
+      }
+
     return (
         <main className="login-container">
             <img id="logo" src={logo} alt="jaunt logo"/>
