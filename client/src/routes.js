@@ -1,4 +1,5 @@
 import App from "./components/App";
+import CreateAccount from "./components/CreateAccount";
 import Login from "./components/Login";
 
 const routes = [
@@ -9,6 +10,10 @@ const routes = [
             {
                 path: "/login",
                 element: <Login/>,
+            },
+            {
+                path: "/createAccount",
+                element: <CreateAccount/>,
             }
         ]
     }

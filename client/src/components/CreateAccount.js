@@ -52,9 +52,10 @@ function CreateAccount() {
                         <input className="create-account-password" type="password" placeholder="Password" value={newUserData.newPassword} onChange={onChangeNewPassword}/>
                         <input className="create-account-email" type="text" placeholder="Email" value={newUserData.email} onChange={onChangeEmail}/>
                         <input className="create-account-phone" type="tel" placeholder="Phone Number" value={newUserData.phone} onChange={onChangePhone}/>
-                        <button id="create-account-button">Create Account</button>
+                        <button className="login-buttons">Create Account</button>
                         <hr></hr>
-                        <Link to="/login"><span className="login-text">Already have an account? Sign In!</span></Link>
+                        <span className="login-text">Already have an account?</span>
+                        <Link to="/login"><button className="login-buttons">Sign In</button></Link>
                     </form>
                 </div>
             </div>

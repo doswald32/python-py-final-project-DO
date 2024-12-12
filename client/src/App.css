@@ -43,7 +43,7 @@
     outline: none;
 }
 
-#login-button, #login-create-account-button, #create-account-button {
+.login-buttons, #login-create-account-button, #create-account-button {
     font-size: 15px;
     font-weight: bold;
     color: white;
